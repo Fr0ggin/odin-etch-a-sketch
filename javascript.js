@@ -22,7 +22,9 @@ const allGrid = document.querySelectorAll(".divGrid")
 allGrid.forEach(divGrid => {
     divGrid.addEventListener("mouseenter",() =>{
         divGrid.style.backgroundColor = "green"
-
+    })
+    divGrid.addEventListener("mouseleave",() =>{
+        divGrid.style.backgroundColor = "lightblue"
     })
 })
 

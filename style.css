@@ -4,22 +4,29 @@
 html,
 body{
     height: 100%;
+    width: auto;
     margin: 0%;
 }
 
 .wrapper{
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:center   
+    flex:auto
+
 }
 .divColumn{
     display: flex;
-    border: 1px solid red;
+    flex:1;
+    border: 1px solid white;
+    background-color: honeydew;
 }
 
 .divGrid{
 
     border: 1px solid black;
     padding: 20px;
+    background-color: lightblue;
+    flex:1;
 
 }

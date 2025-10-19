@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    margin: 0%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content:center   
+}
+.divColumn{
+    display: flex;
+    border: 1px solid red;
+}
+
+.divGrid{
+
+    border: 1px solid black;
+    padding: 20px;
+
+}

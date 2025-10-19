@@ -26,6 +26,7 @@ createGrid(16)
 let allGrid = document.querySelectorAll(".divGrid")
 let allColumn = document.querySelectorAll(".divColumn")
 
+const rndColor = (num) => Math.floor(Math.random() * num +1)
 
 
 // create mousevent on mouse enter and leave
@@ -33,7 +34,7 @@ const addMouseHover = () =>{
     allGrid = document.querySelectorAll(".divGrid")
     allGrid.forEach(divGrid => {
     divGrid.addEventListener("mouseenter",() =>{
-        divGrid.style.backgroundColor = "green"
+        divGrid.style.backgroundColor = `rgb(${rndColor(255)}, ${rndColor(255)}, ${rndColor(255)})`
      })
     divGrid.addEventListener("mouseleave",() =>{
         divGrid.style.backgroundColor = "lightblue"

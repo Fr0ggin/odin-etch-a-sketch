@@ -12,14 +12,20 @@ for(let i = 0; i <16; i++){
     for( let j = 0; j < 16; j++){
         let divGrid = document.createElement("div")
         divGrid.classList.add("divGrid")
-        divGrid.classList.add(i)
+        // divGrid.classList.add(i)
         document.getElementById(i).appendChild(divGrid)
-
-
     }
-
 }
 
-//create column
-// iterate 0-15 over column
-// column ++, iterate again
+// create mousevent on mouse entry
+const allGrid = document.querySelectorAll(".divGrid")
+allGrid.forEach(divGrid => {
+    divGrid.addEventListener("mouseenter",() =>{
+        divGrid.style.backgroundColor = "green"
+
+    })
+})
+
+// mouse event changes color of the div
+// create mouse event on mouse exit
+// mouse event reverts color back

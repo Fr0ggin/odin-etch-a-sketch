@@ -36,9 +36,10 @@ const addMouseHover = () =>{
     divGrid.addEventListener("mouseenter",() =>{
         divGrid.style.backgroundColor = `rgb(${rndColor(255)}, ${rndColor(255)}, ${rndColor(255)})`
      })
-    divGrid.addEventListener("mouseleave",() =>{
-        divGrid.style.backgroundColor = "lightblue"
-     })
+     //comment to make the effect pixelated instead of resetting
+    // divGrid.addEventListener("mouseleave",() =>{
+    //     divGrid.style.backgroundColor = "lightblue"
+    //  })
     })
 }
 addMouseHover()
